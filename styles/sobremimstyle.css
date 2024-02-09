@@ -55,3 +55,14 @@ h1{
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 5%;  
+    }
+    
+    .cabecalho__botoes{     
+        padding: 10px;        
+    }
+ 
+}
