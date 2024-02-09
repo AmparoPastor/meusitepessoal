@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=League+Spartan:wght@700&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+    --cor-fundo:#CAEDFF;
+    --cor-secundaria:#FFC7EA;
+    --cor-hover:#FF4B91;
+    --cor-fonte:#0802A3;
+    --font-principal:'League Spartan', sans-serif;
+    --font-secundaria: 'Dosis', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    box-sizing: border-box;
+    color: var(--cor-fonte);
+}
+
+.cabecalho{
+    display: flex;
+    text-decoration: none;    
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2% 1% 1% 10%;
+}
+
+.cabecalho__botoes{
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1{       
+    font-size: 2.5rem;
+    font-family: var(--font-principal);
+    color: var(--cor-fonte);
+    padding: 18% 20%; 
+
+}
+
+.rodape{
+    color: var(--cor-fonte);
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}

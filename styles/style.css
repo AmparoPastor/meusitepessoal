@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=League+Spartan:wght@700&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+    --cor-fundo:#D8B4F8;
+    --cor-secundaria:#FFC7EA;
+    --cor-hover:#FF4B91;
+    --cor-fonte:#0802A3;
+    --font-principal:'League Spartan', sans-serif;
+    --font-secundaria: 'Dosis', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    box-sizing: border-box;
+    color: var(--cor-fonte);
+}
+
+.cabecalho{              
+    padding: 2% 1% 1% 10%;
+}
+
+.cabecalho__botoes{
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.corpo{    
+    padding: 5% 25% 9% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.corpo__texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    font-family: var(--font-principal);
+    color: var(--cor-fonte);
+    font-size: 2.25rem;
+}
+
+.corpo__texto__apresentacao{
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+}
+
+.corpo__redes{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}
+
+.corpo__redes__click{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid salmon;
+    background-color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-family: var(--font-secundaria);    
+}
+
+.corpo__redes__click:hover{
+    background-color: var(--cor-hover);
+
+}
+
+.corpo__foto{
+    width: 40%;
+
+}
+
+.rodape{
+    color: var(--cor-fonte);
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 5%;  
+    }
+    
+    .cabecalho__botoes{     
+        padding: 10px;        
+    }
+
+    .corpo{
+        flex-direction: column-reverse;
+        padding: 5% 10%;
+    }
+    .corpo__texto{
+        width: auto;
+    }
+
+    .corpo__texto__apresentacao{
+        width: auto;
+    }
+
+    .corpo__redes{
+        gap: 7px;
+    }
+
+    .corpo__redes__click{
+        padding: 5px 1px;
+        gap: 3px;
+    }
+}
